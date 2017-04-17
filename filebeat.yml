@@ -4,7 +4,7 @@ filebeat.prospectors:
 -
   paths:
     - "/var/log/containers/*.log"
-  exclude_files: ['^filebeat']
+  exclude_files: ['filebeat*']
   symlinks: true
   json.message_key: log
   json.keys_under_root: true
